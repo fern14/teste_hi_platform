@@ -14,11 +14,11 @@ Tecnologias Utilizadas
 
 Para rodar a aplicação basta rodar os comandos
 
-npm install - para instalar as dependencias
+<strong>npm install</strong> - para instalar as dependencias
 
-json-server data.json --port 5000 - para rodar o servidor com os dados do json
+<strong>json-server data.json --port 5000</strong> - para rodar o servidor com os dados do json
 
-caso rodar json-server data.json --port 5000 não funcione basta instalar a biblioteca npm install -g json-server
+caso rodar <strong>json-server data.json --port 5000</strong> não funcione basta instalar a biblioteca <strong>npm install -g json-server</strong>
 
 e depois basta rodar um npm run dev para subir em ambiente de desenvolvimento
 
