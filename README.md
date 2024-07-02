@@ -1,30 +1,28 @@
-# React + TypeScript + Vite
+Este é um projeto utilizando React com TypeScript, criado com Vite.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tecnologias Utilizadas
 
-Currently, two official plugins are available:
+React - Biblioteca para construção de interfaces de usuário.
+TypeScript - Superset do JavaScript que adiciona tipagem estática.
+Vite - Ferramenta de build rápida para desenvolvimento web moderno.
+Axios - Cliente HTTP baseado em promessas.
+Styled-components - Biblioteca para estilização de componentes utilizando CSS-in-JS.
+React-icons - Coleção de ícones populares para React.
+Jest - Estrutura de testes em JavaScript.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para rodar a aplicação basta rodar os comandos
 
-## Expanding the ESLint configuration
+npm install - para instalar as dependencias
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+json-server data.json --port 5000 - para rodar o servidor com os dados do json
 
-- Configure the top-level `parserOptions` property like this:
+e depois basta rodar um npm run dev para subir em ambiente de desenvolvimento
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+caso faça o build e suba para ambiente de produção, comentar a primeira linha dos arquivos de testes com a importação do React
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+Observações:
+Json-web-server - como foi utilizado essa lib para subir o servidor, foi criado 26 endpoints, já que cada chave do objeto o json-web-server transforma em um endpoint,
+por isso foi criado 26 botões com os links.
+
+E os children vieram como objetos e não como um array de objetos, então por isso foi utilizado o Object.values para conseguir realizar um map sobre cada children.
