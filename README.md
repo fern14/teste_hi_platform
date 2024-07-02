@@ -29,4 +29,7 @@ caso faça o build e suba para ambiente de produção, comentar a primeira linha
 Json-web-server - como foi utilizado essa lib para subir o servidor, foi criado 26 endpoints, já que cada chave do objeto o json-web-server transforma em um endpoint,
 por isso foi criado 26 botões com os links.
 
+![image](https://github.com/fern14/teste_hi_platform/assets/85141697/92943f16-adeb-4557-b03c-ca2f45ebe168)
+
+
 E os children vieram como objetos e não como um array de objetos, então por isso foi utilizado o Object.values para conseguir realizar um map sobre cada children.
